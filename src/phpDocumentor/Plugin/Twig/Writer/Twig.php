@@ -294,7 +294,7 @@ class Twig extends WriterAbstract implements Routable
                 $filepart = trim((string)current($finder->find($node, $query[1])), '\\/');
 
                 // make it windows proof
-                $filepart = urlencode(iconv('UTF-8', 'ASCII//TRANSLIT', $filepart));
+           //     $filepart = urlencode(iconv('UTF-8', 'ASCII//TRANSLIT', $filepart));
 
                 return $filepart;
             },
